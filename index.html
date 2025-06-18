@@ -8,12 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="app.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </header>
+
 <body>
-    <span>Tienda de <span style="color: #037BC0;">Muebles</span></span>
-    <nav>
+    <span>Tienda de <span class="text-blue">Muebles</span></span>
+    <nav class="navbar">
         <a href="#">Inicio</a>
         <a href="#">Nosotros</a>
         <a href="#">Tienda</a>
@@ -21,123 +25,123 @@
         <a href="#">Galería</a>
         <a href="#">Contacto</a>
     </nav>
-    <div>
 
-
-    </div>
+    <div class="hero"></div>
     <h2>Nuestros Productos</h2>
-    <main class="text-white">
-        <div class="row">
-            <div class="col-9">
-                <img class="" src="producto1.jpg" height="300">
-            </div>
-            <div class="col-3 div-productDetails" >
+    <main class="products-container">
+        <div class="product">
+            <img class="" src="producto1.jpg">
+            <div class="product-details">
                 <h3>Producto 1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ullam harum quia vel ipsum nostrum earum minima laudantium atque rem a vitae</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ullam harum quia vel ipsum nostrum earum
+                    minima laudantium atque rem a vitae</p>
                 <h3>$12,000.00</h3>
-                <button class="button-green height-40">Agregar al carrito</button>
+                <button class="button-green">Agregar al carrito</button>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-6">
-                <img src="producto2.jpg" height="250">
-                <div class="div-productDetails">
-                    <h4>Producto 2</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ullam harum quia vel ipsum nostrum earum minima laudantium atque rem a vitae beatae magnam illo</p>
-                    <h4>$12,000.00</h4>
-                    <button class="button-green height-30">Agregar al carrito</button>
-                </div>
-            </div>
-            <div class="col-6">
-                <img src="producto3.jpg" height="250">
-                <div class="div-productDetails">
-                    <h4>Producto 3</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ullam harum quia vel ipsum nostrum earum minima laudantium atque rem a vitae beatae magnam illo</p>
-                    <h4>$12,000.00</h4>
-                    <button class="button-green height-30">Agregar al carrito</button>
-                </div>
+        <div class="product">
+            <img src="producto2.jpg">
+            <div class="product-details">
+                <h4>Producto 2</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ullam harum quia vel ipsum nostrum earum
+                    minima laudantium atque rem a vitae beatae magnam illo</p>
+                <h4>$12,000.00</h4>
+                <button class="button-green">Agregar al carrito</button>
             </div>
         </div>
-        <div class="row">
-            <div class="col-4">
-                <img src="producto4.jpg" height="200">
-                <div class="div-productDetails">
-                    <h4>Producto 4</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ullam harum quia vel ipsum nostrum earum minima laudantium atque rem a vitae</p>
-                    <h4>$12,000.00</h4>
-                    <button class="button-green">Agregar al carrito</button>
-                </div>
+        <div class="product">
+            <img src="producto3.jpg">
+            <div class="product-details">
+                <h4>Producto 3</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ullam harum quia vel ipsum nostrum earum
+                    minima laudantium atque rem a vitae beatae magnam illo</p>
+                <h4>$12,000.00</h4>
+                <button class="button-green">Agregar al carrito</button>
             </div>
-            <div class="col-4">
-                <img src="producto5.jpg" height="200">
-                <div class="div-productDetails">
-                    <h4>Producto 5</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ullam harum quia vel ipsum nostrum earum minima laudantium atque rem a vitae</p>
-                    <h4>$12,000.00</h4>
-                    <button class="button-green">Agregar al carrito</button>
-                </div>
+        </div>
+
+        <div class="product">
+            <img src="producto4.jpg">
+            <div class="product-details">
+                <h4>Producto 4</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ullam harum quia vel ipsum nostrum earum
+                    minima laudantium atque rem a vitae</p>
+                <h4>$12,000.00</h4>
+                <button class="button-green">Agregar al carrito</button>
             </div>
-            <div class="col-4">
-                <img src="producto6.jpg" height="200">
-                <div class="div-productDetails">
-                    <h4>Producto 6</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ullam harum quia vel ipsum nostrum earum minima laudantium atque rem a vitae</p>
-                    <h4>$12,000.00</h4>
-                    <button class="button-green">Agregar al carrito</button>
-                </div>
+        </div>
+        <div class="product">
+            <img src="producto5.jpg">
+            <div class="product-details">
+                <h4>Producto 5</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ullam harum quia vel ipsum nostrum earum
+                    minima laudantium atque rem a vitae</p>
+                <h4>$12,000.00</h4>
+                <button class="button-green">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="producto6.jpg">
+            <div class="product-details">
+                <h4>Producto 6</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ullam harum quia vel ipsum nostrum earum
+                    minima laudantium atque rem a vitae</p>
+                <h4>$12,000.00</h4>
+                <button class="button-green">Agregar al carrito</button>
             </div>
         </div>
     </main>
-
     <h2>Categorías de Productos</h2>
-    <div class="row">
-        <div class="col-4">
-            <img src="categoria1.jpg" height="150"><br>
+    <div class="categories-container">
+        <div class="category">
+            <img src="categoria1.jpg"><br>
             <a href="#">Oficina</a>
         </div>
-    
-        <div class="col-4">
-            <img src="categoria2.jpg" height="150"><br>
+
+        <div class="category">
+            <img src="categoria2.jpg"><br>
             <a href="#">Hogar</a>
         </div>
-    
-        <div class="col-4">
-            <img src="categoria3.jpg" height="150"><br>
+
+        <div class="category">
+            <img src="categoria3.jpg"><br>
             <a href="#">Cocina</a>
         </div>
     </div>
-   
+
 </body>
 <footer>
-    <div class="row">
-        <div class="col-4">
+    <div class="links-container">
+        <div class="links-group">
             <h3>Categorías</h3>
-            <a href="#" style="text-decoration: none; color: black;">Cocina</a><br>
-            <a href="#" style="text-decoration: none; color: black;">Oficina</a><br>
-            <a href="#" style="text-decoration: none; color: black;">Jardín</a><br>
-            <a href="#" style="text-decoration: none; color: black;">Cochera</a><br>
-            <a href="#" style="text-decoration: none; color: black;">Dormitorios</a>
-        </div>
-        
-        <div class="col-4">
-            <h3>Sobre Nosotros</h3>
-            <a href="#" style="text-decoration: none; color: black;">Nuestra Historia</a><br>
-            <a href="#" style="text-decoration: none; color: black;">Misión, Visión y Valores</a><br>
-            <a href="#" style="text-decoration: none; color: black;">Carrera</a><br>
-            <a href="#" style="text-decoration: none; color: black;">Políticas de privacidad</a><br>
-            <a href="#" style="text-decoration: none; color: black;">Términos del Servicio</a>
+            <a href="#">Cocina</a><br>
+            <a href="#">Oficina</a><br>
+            <a href="#">Jardín</a><br>
+            <a href="#">Cochera</a><br>
+            <a href="#">Dormitorios</a>
         </div>
 
-        <div class="col-4">
+        <div class="links-group">
+            <h3>Sobre Nosotros</h3>
+            <a href="#">Nuestra Historia</a><br>
+            <a href="#">Misión, Visión y Valores</a><br>
+            <a href="#">Carrera</a><br>
+            <a href="#">Políticas de privacidad</a><br>
+            <a href="#">Términos del Servicio</a>
+        </div>
+
+        <div class="links-group">
             <h3>Soporte</h3>
-            <a href="#" style="text-decoration: none; color: black;">Preguntas frecuentes</a><br>
-            <a href="#" style="text-decoration: none; color: black;">Ayuda en Línea</a><br>
-            <a href="#" style="text-decoration: none; color: black;">Confianza y Seguridad</a>
+            <a href="#">Preguntas frecuentes</a><br>
+            <a href="#">Ayuda en Línea</a><br>
+            <a href="#">Confianza y Seguridad</a>
         </div>
     </div>
-    <span class="small">Todos los derechos  reservados</span>
-     <a href="#" class="small">TiendaMuebles</a>
+    <span class="small">Todos los derechos reservados</span>
+    <a href="#" class="small">TiendaMuebles</a>
 </footer>
+
+
 
 </html>

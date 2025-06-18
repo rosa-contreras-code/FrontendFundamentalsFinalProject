@@ -5,7 +5,70 @@
 /** Reescribir colores */
 
 /** Productos */
-.button-green{
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    color: white;
+}
+
+.products-container,
+.categories-container{
+    padding: 0 3em;
+    gap: 1em;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+}
+
+    .product img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .product:nth-child(1) {
+        grid-column: span 6;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+    }
+        .product:nth-child(1) img {
+            flex: 3;
+        }
+
+        .product:nth-child(1) .product-details {
+            flex: 2;
+        }
+
+    .product:nth-child(2),
+    .product:nth-child(3) {
+        grid-column: span 3;
+    }
+
+    .product:nth-child(4),
+    .product:nth-child(5),
+    .product:nth-child(6) {
+        grid-column: span 2;
+    }
+
+.product-details {
+    background-color: #037BC0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    .product-details h4 {
+        text-align: center;
+    }
+
+
+    .button-green {
     background-color: yellowgreen;
     border-color: green;
     border-radius: 7px;
@@ -13,27 +76,32 @@
     padding-left: 20px;
     padding-right: 20px;
     color: white;
+    height: 3em;
 }
 
-.height-30{
-    height: 30px;
+.categories-container{
+    display: flex;
 }
-
-.height-40{
-    height: 40px;
+.category{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+    .category img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 4px;
+    }
 
-.text-white{
-    color: white;
-}
+    .category a{
+        text-decoration: none;
+        color: black;
+    }
 
-/* .divProducto{
-    color: white;
-} */
-
-.div-productDetails{
-    background-color: #037BC0;
-    /* padding-left: 20px;
-    padding-right: 20px; */
-    /* color: white; */
+.links-container{
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
 }
