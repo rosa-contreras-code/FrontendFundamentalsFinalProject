@@ -81,13 +81,13 @@ h3{
         flex-direction: row;
         align-items: stretch;
     }
-        /* .product:nth-child(1) img {
+        .product:nth-child(1) img {
             flex: 3;
         }
 
         .product:nth-child(1) .product-details {
             flex: 2;
-        } */
+        }
 
     .product:nth-child(2),
     .product:nth-child(3) {
