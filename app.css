@@ -1,10 +1,55 @@
 /*reglas generales*/
+html{
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+h1,
+h2,
+h3,
+h4{
+    font-family: 'Playfair', sans-serif;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+h2,
+h3{
+    font-size: 4rem;
+}
 
 /*Media Query*/
+.hero{
+    background-image: url(principal.jpg);
+    height: 65rem;/**/
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+ 
+}
 
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 /** Reescribir colores */
-
+.text-blue{
+    color: #037BC0;
+}
 /** Productos */
+
+.proucts,
+.categories{
+    padding: 0 3em;
+}
 
 .products-container {
     display: grid;
@@ -14,7 +59,6 @@
 
 .products-container,
 .categories-container{
-    padding: 0 3em;
     gap: 1em;
 }
 
@@ -100,8 +144,18 @@
         color: black;
     }
 
+footer nav a{
+    text-decoration: none;
+    color: black;
+    
+}
+
 .links-container{
     display: flex;
     justify-content: center;
     gap: 10rem;
+}
+
+.links-group{
+    text-align: center;
 }
