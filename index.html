@@ -7,150 +7,217 @@
     <title>Ecommerce - Inicio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="app.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </header>
 
 <body>
-    <h1>Tienda de <span class="text-blue">Muebles</span></h1>
-    <nav class="navbar">
-        <a href="#">Inicio</a>
-        <a href="#">Nosotros</a>
-        <a href="#">Tienda</a>
-        <a href="#">Blog</a>
-        <a href="#">Galería</a>
-        <a href="#">Contacto</a>
-    </nav>
+    <div class="container container-fluid min-vh-100 mw-100 p-0">
+        <h1>Tienda de <span class="text-blue">Muebles</span></h1>
 
-    <div class="hero"></div>
-    
-    <main class="products">
-        <h2>Nuestros Productos</h2>
-        <div class="products-container">
-            <div class="product">
-                <img class="" src="producto1.jpg">
-                <div class="product-details">
-                    <h3>Producto 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ullam harum quia vel ipsum nostrum earum
-                        minima laudantium atque rem a vitae</p>
-                    <span>$12,000.00</span>
-                    <button class="button-green">Agregar al carrito</button>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido"
+                    aria-controls="navbarContenido" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarContenido">
+                    <div class="navbar-nav w-100  d-flex justify-content-around">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link" href="#">Nosotros</a>
+                        <a class="nav-link" href="#">Tienda</a>
+                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="#">Galería</a>
+                        <a class="nav-link" href="#">Contacto</a>
+                    </div>
                 </div>
             </div>
+        </nav>
 
-            <div class="product">
-                <img src="producto2.jpg">
-                <div class="product-details">
-                    <h4>Producto 2</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ullam harum quia vel ipsum nostrum earum
-                        minima laudantium atque rem a vitae beatae magnam illo</p>
-                    <span>$12,000.00</span>
-                    <button class="button-green">Agregar al carrito</button>
-                </div>
+        <div class="hero mx-auto">
+            <div id="carrusel" class="carousel slide carousel-fade" data-bs-ride="carousel"> <!--carousel-fade-->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carrusel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carrusel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carrusel" data-bs-slide-to="3"></button>
             </div>
-            <div class="product">
-                <img src="producto3.jpg">
-                <div class="product-details">
-                    <h4>Producto 3</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ullam harum quia vel ipsum nostrum earum
-                        minima laudantium atque rem a vitae beatae magnam illo</p>
-                    <span>$12,000.00</span>
-                    <button class="button-green">Agregar al carrito</button>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="principal(2).jpg" class="d-block w-100" alt="Sala moderna">
                 </div>
-            </div>
-
-            <div class="product">
-                <img src="producto4.jpg">
-                <div class="product-details">
-                    <h4>Producto 4</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ullam harum quia vel ipsum nostrum earum
-                        minima laudantium atque rem a vitae</p>
-                    <span>$12,000.00</span>
-                    <button class="button-green">Agregar al carrito</button>
+                <div class="carousel-item" data-bs-interval="3000"> 
+                    <img src="carrusel1.png" class="d-block w-100" alt="Recámara minimalista individual">
                 </div>
-            </div>
-            <div class="product">
-                <img src="producto5.jpg">
-                <div class="product-details">
-                    <h4>Producto 5</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ullam harum quia vel ipsum nostrum earum
-                        minima laudantium atque rem a vitae</p>
-                    <span>$12,000.00</span>
-                    <button class="button-green">Agregar al carrito</button>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="carrusel2.jpg" class="d-block w-100" alt="Recepción moderna">
                 </div>
-            </div>
-            <div class="product">
-                <img src="producto6.jpg">
-                <div class="product-details">
-                    <h4>Producto 6</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ullam harum quia vel ipsum nostrum earum
-                        minima laudantium atque rem a vitae</p>
-                    <span>$12,000.00</span>
-                    <button class="button-green">Agregar al carrito</button>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="carrusel3.png" class="d-block w-100" alt="Recámara minimalista matrimonial">
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previo</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
             </div>
         </div>
-    </main>
-    
-    <section class="categories">
-        <h2>Categorías de Productos</h2>
+        </div>
+        <main class="main">
+            <h2 class="my-4 my-md-5">Nuestros Productos</h2>
+            <div class="products-container">
+                <div class="row g-3">
+                    <div class="col-12 ">
+                        <div class="card product">
+                            <div class="d-flex flex-column flex-md-row">
+                                <div class="col-md-8">
+                                    <img class="w-100 h-100" src="producto1.jpg">
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card-body h-100 product-details">
+                                        <h3>Producto 1</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ullam harum quia vel ipsum
+                                            nostrum earum
+                                            minima laudantium atque rem a vitae</p>
+                                        <span class=" fw-bolder">$12,000.00</span>
+                                        <button class="button-green">Agregar al carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="card product">
+                            <img src="producto2.jpg">
+                            <div class="card-body h-100 product-details">
+                                <h4 >Producto 2</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ullam harum quia vel ipsum
+                                    nostrum earum
+                                    minima laudantium atque rem a vitae beatae magnam illo</p>
+                                <span class="fw-bolder">$12,000.00</span>
+                                <button class="button-green">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 ">
+                        <div class="card product">
+                            <img src="producto3.jpg">
+                            <div class="card-body h-100 product-details">
+                                <h4>Producto 3</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ullam harum quia vel ipsum
+                                    nostrum earum
+                                    minima laudantium atque rem a vitae beatae magnam illo</p>
+                                <span class="fw-bolder">$12,000.00</span>
+                                <button class="button-green">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card product">
+                            <img src="producto4.jpg">
+                            <div class="card-body h-100 product-details">
+                                <h4>Producto 4</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ullam harum quia vel ipsum
+                                    nostrum earum</p>
+                                <span class="fw-bolder">$12,000.00</span>
+                                <button class="button-green">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card product">
+                            <img src="producto5.jpg">
+                            <div class="card-body h-100 product-details">
+                                <h4>Producto 5</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ullam harum quia vel ipsum
+                                    nostrum earum</p>
+                                <span class="fw-bolder">$12,000.00</span>
+                                <button class="button-green">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card product">
+                            <img src="producto6.jpg">
+                            <div class="card-body h-100 product-details">
+                                <h4>Producto 6</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ullam harum quia vel ipsum
+                                    nostrum earum</p>
+                                <span class="fw-bolder">$12,000.00</span>
+                                <button class="button-green">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    <section class="categories mb-5 mb-md-5">
+        <h2 class="my-4 my-md-5 ">Categorías de Productos</h2>
         <div class="categories-container">
             <div class="category">
-                <img src="categoria1.jpg"><br>
-                <a href="#">Oficina</a>
+                <img src="categoria1.jpg">
+                <a href="#" class="fw-medium">Oficina</a>
             </div>
 
             <div class="category">
-                <img src="categoria2.jpg"><br>
-                <a href="#">Hogar</a>
+                <img src="categoria2.jpg">
+                <a href="#" class="fw-medium">Hogar</a>
             </div>
 
             <div class="category">
-                <img src="categoria3.jpg"><br>
-                <a href="#">Cocina</a>
+                <img src="categoria3.jpg">
+                <a href="#" class="fw-medium">Cocina</a>
             </div>
         </div>
     </section>
-</body>
-
-<footer>
-    <div class="links-container">
-        <div class="links-group">
-            <h3>Categorías</h3>
-            <nav>
-                <a href="#">Cocina</a><br>
-                <a href="#">Oficina</a><br>
-                <a href="#">Jardín</a><br>
-                <a href="#">Cochera</a><br>
+        
+    <footer>
+        <div class="links-container">
+            <div class="links-group">
+                <h3>Categorías</h3>
+                <a href="#">Cocina</a>
+                <a href="#">Oficina</a>
+                <a href="#">Jardín</a>
+                <a href="#">Cochera</a>
                 <a href="#">Dormitorios</a>
-            </nav>
-        </div>
+            </div>
 
-        <div class="links-group">
-            <h3>Sobre Nosotros</h3>
-            <nav>
-                <a href="#">Nuestra Historia</a><br>
-                <a href="#">Misión, Visión y Valores</a><br>
-                <a href="#">Carrera</a><br>
-                <a href="#">Políticas de privacidad</a><br>
+            <div class="links-group">
+                <h3>Sobre Nosotros</h3>
+                <a href="#">Nuestra Historia</a>
+                <a href="#">Misión, Visión y Valores</a>
+                <a href="#">Carrera</a>
+                <a href="#">Políticas de privacidad</a>
                 <a href="#">Términos del Servicio</a>
-            </nav>
-        </div>
+            </div>
 
-        <div class="links-group">
-            <h3>Soporte</h3>
-            <nav>
-                <a href="#">Preguntas frecuentes</a><br>
-                <a href="#">Ayuda en Línea</a><br>
+            <div class="links-group">
+                <h3>Soporte</h3>
+                <a href="#">Preguntas frecuentes</a>
+                <a href="#">Ayuda en Línea</a>
                 <a href="#">Confianza y Seguridad</a>
-            </nav>
+            </div>
         </div>
-    </div>
-    <span class="small">Todos los derechos reservados</span>
-    <a href="#" class="small">TiendaMuebles</a>
-</footer>
-
-
-
+        <div class="text-center m-4">
+            <span class="small">Todos los derechos reservados</span>
+            <a href="#" class="small text-decoration-none">TiendaMuebles</a>
+        </div>
+    </footer>
+</body>
 </html>
