@@ -46,6 +46,10 @@ img {
     background-position: center;
 }
 
+/*Transiciones*/
+/* .transition-collapse {
+  transition: height 0.3s ease;
+} */
 
 /*Media Query*/
 
@@ -339,6 +343,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 .category img {
@@ -346,6 +351,19 @@ img {
     height: 100%;
     object-fit: cover;
     border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.category:hover img {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.img-wrapper {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 4px;
 }
 
 .category a,
